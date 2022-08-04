@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,800;1,200;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+.transaction-history .card{
+    position: relative;
+    box-shadow: 0 0 50px rgba(124, 121, 121, 0.337);
+    height: 70vh;
+    overflow-x: scroll;
+}
+
+.transaction-history .card::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 50px;
+    /* display: none; */
+}
+.transaction-history .card::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+.transaction-history .card::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 50px;
+}
+.transaction-history .card::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+
+.transaction-history .card-title{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.transaction-history .card-title .transaction-text{
+    font-weight: lighter;
+    color: #999;
+}
+
+@media screen and (max-width: 526px) {
+    .history-table{
+        overflow-y: scroll;
+    } 
+    .history-table::-webkit-scrollbar{
+        display: none;
+    }
+}

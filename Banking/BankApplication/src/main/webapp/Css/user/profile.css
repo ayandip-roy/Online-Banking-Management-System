@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,800;1,200;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-page .card {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 50px rgba(124, 121, 121, 0.337);
+}
+.profile-page .card .card-img-top{
+    border-radius: 1rem 1rem 0 0;
+    height: 10rem;
+}
+
+.profile-page .card .profile-title{
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 3rem;
+}
+
+.profile-page .card .card-body .card-text{
+    font-family: sans-serif;
+    font-weight: light;
+    color: #999;
+}
+
+.profile-page .card .card-body .bi{
+    font-size: 2rem;
+    color: blue;
+}
+
+.profile-page .card .card-body .profile-img{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.bi-pencil-square{
+    font-size: 1rem !important;
+    color: #fff !important;
+    padding-right: 10px !important;
+}
+
+.bi-currency-dollar{
+    color: rgb(75, 219, 59) !important;
+}
+
+.card-titles{
+    display: flex;
+    justify-content: space-between;
+}
+.card-texts{
+    display: flex;
+    justify-content: space-between;
+}
+.bi{
+    font-size: 1rem !important;
+}
+
+.bi-piggy-bank-fill{
+    color: rgb(218, 79, 216) !important;
+}
+.bi-key-fill{
+    color: rgb(230, 216, 62) !important;
+}
+.bi-telegram{
+    color: rgb(33, 123, 212) !important;
+}
+
+.form-check .bi-gender-male{
+    font-size: 2rem !important;
+    color: rgb(43, 16, 197);
+    font-weight: bolder;
+}
+.form-check .bi-gender-female{
+    font-size: 2rem !important;
+    color: rgb(191, 15, 162);
+}
+
+.account-details{
+    font-family: sans-serif;
+}
+
+
+/* ************************  */  
+  .imgcontainer {
+    margin: 24px 0 12px 0;
+    padding-left: 2rem;
+    position: relative;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+  #ProfileIcon{
+    font-size: 5rem !important;
+  }
+
+  .uploafProfileimage{
+    position: relative;
+  }
+
+  .profileUpload{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    border-radius: 50%;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 99; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    padding-top: 60px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 30%; 
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  @media screen and (max-width: 663px) {
+    .modal-content{
+        width: 80%;
+
+    }
+  }
+  @media screen and (max-width: 995px) {
+    .profile-page .card .card-body .profile-img{
+        left: 45%;
+    }
+  }
+  @media screen and (max-width: 830px) {
+    .profile-page .card .card-body .profile-img{
+        left: 44%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .profile-page .card .card-body .profile-img{
+        left: 39%;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .profile-page .card .card-body .profile-img{
+        left: 34%;
+    }
+  }
+
+
+.modal::-webkit-scrollbar{
+    display: none;
+}
+

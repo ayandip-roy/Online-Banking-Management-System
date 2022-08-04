@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <title>Register</title>
+    <link rel="icon" href="../Media/logo.png" type="image/png">
+
+    <style>
+        textarea {
+            resize: none;
+        }
+
+        .card {
+            box-shadow: 0 0 50px rgba(124, 121, 121, 0.337);
+        }
+
+        .UserNameAvable {
+            display: none;
+        }
+
+        .activeUserNameAvable {
+            display: block;
+            color: green;
+            padding-top: -10px !important;
+        }
+    </style>
+</head>
+
+<body id="body-pd" onload="submitRegistrationForm();">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Media/logo.png" width="30" height="24" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="alert alert-success" role="alert" id="submitAlert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Thank You for Chosing Us...!</p>
+            <hr>
+            <p class="mb-0">Please wait..!Once our excutive verify your details, You will be notified <br>
+                Back to Home page <a href="../index.html">Click Here</a> <br>
+                <span id="timeOutMsg"></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- User name availability Check  -->
+    <script>
+        function verifyAvailability() {
+            const toggleName = document.querySelector('.UserNameAvable');
+            toggleName.classList.toggle('activeUserNameAvable');
+        }
+    </script>
+
+    <!-- on submit alert  -->
+
+    <script>
+        function submitRegistrationForm() {
+            var submitAlert = document.getElementById('submitAlert');
+            var registeraionfromShow = document.getElementById('registeraionfromShow');
+
+                //submitAlert.style.display = 'block';
+                //registeraionfromShow.style.display = 'none';
+
+            //auto time out redirect function
+            var iCnt = 3;
+            var iTimerId = setInterval(function(){
+                document.getElementById('timeOutMsg').innerHTML = 'Redirecting in '+iCnt+' seconds';
+                
+                iCnt--;
+
+                if(iCnt === 0){
+                    window.location.href='../index.html';
+                    clearInterval(iTimerId);
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

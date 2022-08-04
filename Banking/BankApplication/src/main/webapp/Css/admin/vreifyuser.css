@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,800;1,200;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+.veryfy-user-account .card{
+    position: relative;
+    box-shadow: 0 0 50px rgba(124, 121, 121, 0.337);
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.veryfy-user-account .card::-webkit-scrollbar{
+    width: 2px;
+    border-radius: 50px;
+    display: none;
+}
+.veryfy-user-account .card::-webkit-scrollbar-track{
+    background: #555;
+    border-radius: 50px;
+}
+.veryfy-user-account .card::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 50px;
+}
+.veryfy-user-account .card::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+
+.veryfy-user-account .card-title{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.veryfy-user-account .card-title .verify-text{
+    font-weight: lighter;
+    color: #999;
+}
+
+@media screen and (max-width: 526px) {
+
+    .history-table{
+        overflow-y: scroll;
+    } 
+    .history-table::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 99; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    padding-top: 60px;
+  }
+
+  .model-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto !important; 
+    border: 1px solid #888;
+    width: 50%; 
+  }
+
+  .close{
+    padding-right: 1rem;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  @media screen and (max-width: 663px) {
+    .modal-content{
+        width: 80%;
+
+    }
+  }
+
+.modal::-webkit-scrollbar{
+    display: none;
+}

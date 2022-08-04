@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,800;1,200;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+#body-pd{
+    background: #000;
+}
+
+
+.dashboard-card .card{
+    cursor: pointer;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.337);
+    background: #212121;
+}
+
+.dashboard-card .card .card-title{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.dashboard-card .card .card-body{
+    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ccc;
+}
+
+#showBredcum{
+    color: #fff;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.dashboard-card .card:hover{
+    border: 1px solid #4119F2;
+}
+
+#moneyDebit{
+    padding: 2rem;
+}
+
+.moneyChart .card{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.337);
+    background: #212121;
+    color: #fff;
+}
+
+.transaction-history .card{
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.337);
+    background: #212121;
+}
+
+.transaction-history .card-title{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.transaction-history .card-title .transaction-text{
+    font-weight: lighter;
+    color: #fff;
+}
+
+.transaction-history .card-title .btn{
+    position: absolute;
+    right: 1rem;
+    border: 1px solid #5e40e6;
+    background: #5e40e6;
+}
+
+.transaction-history .history-table table th, 
+.transaction-history .history-table table td{
+    color: #fff;
+}
+
+.transaction-history .card-title .btn a{
+    color: #fff;
+}
+
+@media screen and (max-width: 526px) {
+    .history-table{
+        overflow-y: scroll;
+    } 
+    
+    .transaction-history .card-title{
+        font-size: .7rem;
+    }
+
+    .transaction-history .card-title .btn{
+        position: absolute;
+        right: 1rem;
+        border: 1px solid #5e40e6;
+        background: #5e40e6;
+    }
+    .transaction-history .card-title .btn a{
+        font-size: .7rem;
+        padding: .1rem;
+    }
+}
+
+@media screen and (max-width: 329px){
+    .transaction-history .card-title{
+        font-size: .7rem;
+        padding-left: 1rem;
+    }
+
+    .transaction-history .card-title .transaction-text{
+        font-size: .5rem;
+    }
+
+    .moneyChart .card{
+        overflow-y: scroll;
+    }
+}
+
